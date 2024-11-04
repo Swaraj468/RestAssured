@@ -12,7 +12,7 @@ public class practice1main {
 		obj.setMobilephone(919999, 185222);
 		
 		Response response = given().contentType(ContentType.JSON).body(obj).post("http://localhost:3000/second");
-	 
+	 response.prettyPrint();
 
 	}
 

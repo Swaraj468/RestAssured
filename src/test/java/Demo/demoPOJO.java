@@ -1,11 +1,13 @@
 package Demo;
 
+
+
 public class demoPOJO {
 	private String id;
 	private String student_name;
 	private String Roll_No;
 	private String Section;
-	
+//	private addresspojo address;
 
 
 	public demoPOJO(String id, String student_name, String Roll_No, String Section) {
@@ -14,10 +16,19 @@ public class demoPOJO {
 		this.student_name = student_name;
 		this.Roll_No = Roll_No;
 		this.Section = Section;
+//		this.address = new addresspojo(HouseNo, StreetNo, City, State);
 		
 		
 		
 	}
+
+//	public addresspojo getAddress() {
+//		return address;
+//	}
+//
+//	public void setAddress(addresspojo address) {
+//		this.address = address;
+//	}
 
 	public String getId() {
 		return id;

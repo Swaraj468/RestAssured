@@ -7,17 +7,26 @@ public class practicepojo {
 	private String studentName;
 	private String RollNo;
 	private ArrayList<Integer> phone;
+	private addresspojo address;
 	
-public practicepojo(String id, String studentName, String RollNo){
+public practicepojo(String id, String studentName, String RollNo, String HouseNo, String StreetNo, String City, String State){
 	this.id = id;
 	this.studentName = studentName;
 	this.RollNo = RollNo;
 	this.phone = new ArrayList<Integer>();
-	
+	this.address = new addresspojo(HouseNo, StreetNo, City, State);
 }
 
 public String getId() {
 	return id;
+}
+
+public addresspojo getAddress() {
+	return address;
+}
+
+public void setAddress(addresspojo address) {
+	this.address = address;
 }
 
 public void setId(String id) {
